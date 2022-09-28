@@ -32,12 +32,12 @@ function countdown() {
    if (isFinished) {
       resetControls()
       updateDisplay()
-      Sounds().timeEnd
+      Sounds().timeEnd()
       return
     }
 
     if( seconds <= 0) {
-      seconds = 2
+      seconds = 60
       --minutes
     }
 
