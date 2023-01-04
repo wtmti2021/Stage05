@@ -23,6 +23,7 @@ function reset() {
 
 function countdown() {
   timerTimeOut = setTimeout(function() {
+    
     let seconds =  Number(secondsDisplay.textContent)
     let minutes = Number(minutesDisplay.textContent)
     let isFinished = minutes <= 0 && seconds <= 0
